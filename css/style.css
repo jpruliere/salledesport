@@ -109,10 +109,11 @@ section.talks ul {
 	width: 90px;
 }
 
-.talk-photo-left {
-}
-
 .talk-photo-right {
 	order: 8;
 }
 
+
+footer {
+  padding: 15px;
+}
