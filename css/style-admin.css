@@ -1,0 +1,42 @@
+body {
+	background-color: #ccc;
+}
+
+header.admin-menu {
+	min-height: 100vh;
+	background-color: #777;
+	border-right: 3px solid #2d1650;
+}
+
+header.admin-menu h1 img {
+	width: 100%;
+}
+
+ul#menu-actions {
+	list-style-type: none;
+	padding-left: 5px;
+	font-size: 1.3em;
+}
+ul#menu-actions a {
+	color: #fff;
+}
+
+main {
+	padding: 70px 30px 40px 10px;
+}
+
+ul#seances {
+	font-size: 2em;
+	list-style-type: none;
+	padding-left: 0;
+}
+
+ul#seances li.inscrit {
+	color: red;
+}
+
+ul#seances li.inscrit:after {
+	content: ' - déjà inscrit';
+	font-weight: bold;
+	
+}
