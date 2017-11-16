@@ -30,12 +30,16 @@ h1, h2, h3, h4, h5, h6 {
 	height: 100%;
 }
 
-section.splash {
+section.splash, section.super-splash {
 	padding: 5px 0;
 	background-image: url(../img/fond_splash.jpg);
 	background-size: cover;
 	background-attachment: fixed;
 	min-height: 80vh;
+}
+
+section.super-splash {
+	min-height: 100vh;
 }
 
 section.splash > h2 {
@@ -116,4 +120,19 @@ section.talks ul {
 
 footer {
   padding: 15px;
+}
+
+.super-splash-modal {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.form-modal {
+	background-color: #2d1650;
+	color: #fff;
+	width: 40vw;
+	max-width: 600px;
+	padding: 15px 30px;
+
 }
