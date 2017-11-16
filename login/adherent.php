@@ -3,9 +3,10 @@
 <form class="form-modal" action="traitement.php" method="post">
 	<h3>Connexion adhérent</h3>
 	<hr>
+	<?php if (isset($_GET['err'])): ?><div class="alert alert-danger" role="alert">Identifiants incorrects</div><?php endif; ?>
 	<div class="form-group">
 		<label for="email">Adresse email ou numéro d'adhérent</label>
-		<input type="text" class="form-control" id="email" name="email" placeholder="XXXXXXXX ou xxx@yyy.zzz">
+		<input type="text" class="form-control" id="email" name="email" placeholder="XXXXXXXX ou xxx@yyy.zzz" <?php if (isset($_GET['login'])): ?>value="<?=$_GET['login'];?>"<?php endif; ?>>
 	</div>
 	<div class="form-group">
 		<label for="mdp">Mot de passe</label>
