@@ -1,3 +1,4 @@
+<?php $baseUrl = 'http://localhost/wf3/salledesport/'; ?>
 <!DOCTYPE html>
 <html lang="fr">
   <head>
@@ -8,9 +9,9 @@
     <title>The Muscle Shop</title>
 
     <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Oswald:300,500" rel="stylesheet"> 
-    <link href="css/font-awesome.min.css" rel="stylesheet">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="<?=$baseUrl;?>css/font-awesome.min.css" rel="stylesheet">
+    <link href="<?=$baseUrl;?>css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="<?=$baseUrl;?>css/style.css">
   </head>
   <body>
     <header>
@@ -24,7 +25,7 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#"><img src="img/logo.png"/></a>
+            <a class="navbar-brand" href="#"><img src="<?=$baseUrl;?>img/logo.png"/></a>
           </div>
 
           <!-- Collect the nav links, forms, and other content for toggling -->
@@ -36,8 +37,8 @@
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Accès membre <span class="caret"></span></a>
                 <ul class="dropdown-menu">
-                  <li><a href="login/adherent.php">Adhérent</a></li>
-                  <li><a href="login/coach.php">Coach</a></li>
+                  <li><a href="<?=$baseUrl;?>login/adherent.php">Adhérent</a></li>
+                  <li><a href="<?=$baseUrl;?>login/coach.php">Coach</a></li>
                 </ul>
               </li>
             </ul>
