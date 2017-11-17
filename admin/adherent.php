@@ -25,6 +25,7 @@
 			<h3>Espace connecté</h3>
 			<ul id="menu-actions">
 				<li><a href="?action=seance.lister">Voir les séances</a></li>
+				<li><a href="<?=$baseUrl;?>/login/deconnexion.php">Se déconnecter</a></li>
 			</ul>
 		</header>
 		<main class="col-md-9 col-sm-8">
